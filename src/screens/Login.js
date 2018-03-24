@@ -13,7 +13,7 @@ import { login } from '../actions'; //for use the Rest_API
 
 class Login extends Component {
     static navigationOptions = {
-        title: 'Login',
+        title: 'Login Page',
 
 
     };
@@ -25,25 +25,25 @@ class Login extends Component {
         };
     }
 
-    componentWillMount () {
+    componentWillMount() {
 
     }
 
-    render () {
+    render() {
         let { user } = this.props.auth;
         return (
             <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Text>Login Screen</Text>
                 <Button
                     title="Go to Home"
-                    onPress={() => this.props.navigation.replace('Home')}
+                    onPress={() => this.props.navigation.push('Home')}
                 />
             </View>
         );
     }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
     //pass the providers
     return {
         auth: state.auth
@@ -51,7 +51,7 @@ function mapStateToProps (state) {
 }
 
 /* Map Actions to Props */
-function mapDispatchToProps (dispatch) {
+function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators({
             login

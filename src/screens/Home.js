@@ -10,12 +10,9 @@ import colors from '../constants/colors';
 import { Button, Icon, Text } from 'native-base';
 
 class Home extends Component {
-    static navigationOptions = {
-        headerStyle: {
-            display: 'none'
-        },
 
-    };
+
+
     constructor(props) {
         super(props);
 
@@ -24,13 +21,12 @@ class Home extends Component {
         };
     }
 
-    componentWillMount () {
+    componentWillMount() {
     }
-    render () {
+    render() {
         return (
-            <View>
+            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
                 <Button transparent style={{ backgroundColor: colors.white, }} onPress={this.props.actions.showSidebar}>
-                    <Icon name='menu' style={{ color: 'black' }} />
                 </Button>
                 <Text>Home Screen</Text>
             </View>
@@ -38,14 +34,14 @@ class Home extends Component {
     }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
     //pass the providers
     return {
     }
 }
 
 /* Map Actions to Props */
-function mapDispatchToProps (dispatch) {
+function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators({
             showSidebar

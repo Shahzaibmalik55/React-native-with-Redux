@@ -1,4 +1,4 @@
-package com.agoratag;
+package com.reactnativewithredux;
 
 import android.app.Application;
 
