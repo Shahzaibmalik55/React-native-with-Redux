@@ -30,6 +30,6 @@ Include Sidebar <br/>
 2) In app.json change "name" and "displayName" to your project name
 3) In index.js in `AppRegistry.registerComponent('ReactNativeWithRedux ', () => App);` replace "ReactNativeWithRedux" to your Project Name
 4) Run `react-native upgrade`
-
+5) After runinig react-native upgrade for replacing version type 'yes'
 
 
