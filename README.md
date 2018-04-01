@@ -28,6 +28,7 @@ Include Sidebar <br/>
 # After Clone Project for Change Name to your Project 
 1) Delete ios and android folder
 2) In app.json change "name" and "displayName" to your project name
+3) In Package.json change "name" to your project name 
 3) In index.js in `AppRegistry.registerComponent('ReactNativeWithRedux ', () => App);` replace "ReactNativeWithRedux" to your Project Name
 4) Run `react-native upgrade`
 5) After runinig react-native upgrade for replacing version type 'yes'
